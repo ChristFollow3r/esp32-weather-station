@@ -1,4 +1,4 @@
-package io.github.christfollower.weatherstation
+package io.github.christfollow3r.weatherstation
 
 import io.ktor.server.application.*
 import io.ktor.server.response.*

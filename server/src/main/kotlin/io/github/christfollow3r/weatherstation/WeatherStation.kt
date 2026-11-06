@@ -1,4 +1,4 @@
-package io.github.christfollower.weatherstation
+package io.github.christfollow3r.weatherstation
 
 enum class TemperatureStatus {
     FALLING,

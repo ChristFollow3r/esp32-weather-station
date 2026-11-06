@@ -3,5 +3,5 @@ ktor:
     port: 8080
   application:
     modules:
-      - io.github.christfollower.weatherstation.SerializationKt.configureSerialization
-      - io.github.christfollower.weatherstation.RoutingKt.configureRouting
+      - io.github.christfollow3r.weatherstation.SerializationKt.configureSerialization
+      - io.github.christfollow3r.weatherstation.RoutingKt.configureRouting

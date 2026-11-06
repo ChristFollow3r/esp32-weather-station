@@ -5,7 +5,7 @@ plugins {
     alias(libs.plugins.kotlin.serialization)
 }
 
-group = "io.github.christfollower"
+group = "io.github.christfollow3r"
 version = "1.0.0-SNAPSHOT"
 
 application {
