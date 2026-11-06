@@ -1,0 +1,28 @@
+# Gradle
+.gradle/
+build/
+!**/gradle/wrapper/gradle-wrapper.jar
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Kotlin
+.kotlin/
+
+# Logs
+*.log
+logs/
+
+# Local database files (SQLite)
+*.db
+*.sqlite
+*.sqlite3
+
+# Secrets and local config
+.env
+secrets.*
+local.properties
