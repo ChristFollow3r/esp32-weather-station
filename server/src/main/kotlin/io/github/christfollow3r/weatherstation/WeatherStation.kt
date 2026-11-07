@@ -1,5 +1,7 @@
 package io.github.christfollow3r.weatherstation
 
+import kotlinx.serialization.Serializable
+
 enum class TemperatureStatus {
     FALLING,
     STABLE,
@@ -8,6 +10,7 @@ enum class TemperatureStatus {
 
 // TODO: Store each reading as a sensor type
 
+@Serializable
 data class Report  (
     val temperature: Float,
     val humidity: Float,
@@ -37,5 +40,18 @@ class WeatherStation(private val maxReadings: Int = 20) {
     @Synchronized
     fun averageHumidity(): Float? =
         if (recent.isEmpty()) null else recent.map { it.humidity }.average().toFloat()
+
+    @Synchronized
+    fun getReport(): Report? {
+
+        if (recent.size < maxReadings) return null
+
+        val t = averageTemperature() ?: return null
+        val h = averageHumidity() ?: return null
+
+        return Report(t, h)
+
+    }
+
 
 }
